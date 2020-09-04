@@ -113,7 +113,7 @@ Below, the possible color combination to use for the icon. (Yf you want more, do
 
 ## 💡 Preview
 
-You can view the preview by [click here](https://rawgit.com/barthachijuu/circularmenu/master/dist/index.html)
+You can view the preview by [click here](https://codesandbox.io/s/zealous-feather-geyk8?fontsize=14&hidenavigation=1&theme=dark)
 
 ## 🎁 Support: Donate
 

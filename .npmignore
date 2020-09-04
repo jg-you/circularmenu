@@ -5,7 +5,7 @@ appveyor.yml
 .babelrc
 .browserslistrc
 CHANGELOG.md
-@barthachijuu/index.html
+dist/index.html
 circularMenu
 codecov.yml
 config
