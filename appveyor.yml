@@ -47,7 +47,7 @@ test_script:
   - npm --version
   # run test and build
   - npm run test
-  - bash <(curl -s https://codecov.io/bash -s -- -c -F aFlag -f coverage/clover.xml -t 1e50fbd7-dd95-4286-a55a-51d11426ae61)
+  - bash <(curl -s https://codecov.io/bash -s -- -c -F aFlag -f C:\projects\circularmenu\coverage\clover.xml -t 1e50fbd7-dd95-4286-a55a-51d11426ae61)
 
 # Cache node_modules for faster builds
 cache:
