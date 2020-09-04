@@ -1,0 +1,35 @@
+{
+  "comment": {
+    "require_changes": false,
+    "layout": "header, diff",
+    "behavior": "default"
+  },
+  "parsers": {
+    "gcov": {
+      "branch_detection": {
+        "macro": false,
+        "conditional": true,
+        "method": false,
+        "loop": true
+      }
+    }
+  },
+  "coverage": {
+    "status": {
+      "project": true,
+      "changes": false,
+      "patch": true
+    },
+    "range": [
+      70.0,
+      100.0
+    ],
+    "precision": 2,
+    "round": "down"
+  },
+  "codecov": {
+    "token": 858f1b88-2930-4c37-a9f9-102d02ee19be,
+    "notify": {},
+    "require_ci_to_pass": true
+  }
+}

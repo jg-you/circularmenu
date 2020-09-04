@@ -1,0 +1,83 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:jest/recommended"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "globals": {
+    "__DEV__": false,
+    "__TEST__": false,
+    "__PROD__": false,
+    "__COVERAGE__": false
+  },
+  "rules": {
+    "arrow-body-style": [2, "as-needed"],
+    "comma-dangle": ["error", "always-multiline"],
+    "object-curly-newline": [0, {
+        "multiline": true,
+        "minProperties": 3
+    }],
+    "quotes": [
+      1,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "max-len": [1, {
+      "code": 150
+    }
+    ],
+    "no-console": 0,
+    "indent": [
+      "error", 2,
+      { "ignoredNodes": ["TemplateLiteral"] }
+    ],
+    "array-callback-return":"off",
+    "template-curly-spacing": "off",
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default": 0,
+    "no-nested-ternary": 0,
+    "no-param-reassign": 0,
+    "no-unused-expressions": 0,
+    "no-underscore-dangle": 0,
+    "no-useless-escape": 0,
+    "no-shadow": "off",
+    "no-undef": "off",
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true, "exceptions": { "VariableDeclarator": true } }],
+		"block-spacing": ["error", "always"],
+		"array-bracket-spacing": ["error", "never"],
+		"space-in-parens": ["error", "never"],
+		"comma-spacing": ["error", { "before": false, "after": true }],
+    "key-spacing": ["error", { "afterColon": true, "beforeColon": false }],
+    "semi": ["error", "always"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  }
+}
