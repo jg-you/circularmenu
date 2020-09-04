@@ -111,7 +111,9 @@ Below, the possible color combination to use for the icon. (Yf you want more, do
 |icon-orange-{0-7} | Orange | from ![#fff9f1](https://via.placeholder.com/15/fff9f1/000000?text=+) `#fff9f1` to ![#d9480f](https://via.placeholder.com/15/d9480f/000000?text=+) `#d9480f` |
 |icon-brown-{0-7} | Brown | from ![#f5deb3](https://via.placeholder.com/15/f5deb3/000000?text=+) `#f5deb3` to ![#a52a2a](https://via.placeholder.com/15/a52a2a/000000?text=+) `#a52a2a` |
 
-You can view the live site at [circularmenu](http://barthachijuu.github.io/circularmenu/index.html)
+## 💡 Preview
+
+You can view the preview by [click here](https://rawgit.com/barthachijuu/circularmenu/master/dist/index.html)
 
 ## 🎁 Support: Donate
 
