@@ -1,6 +1,6 @@
 [![dependencies Status](https://david-dm.org/barthachijuu/circularmenu/status.svg)](https://david-dm.org/barthachijuu/circularmenu)
 [![devDependencies Status](https://david-dm.org/barthachijuu/circularmenu/dev-status.svg)](https://david-dm.org/barthachijuu/circularmenu?type=dev)
-[![Build status](https://ci.appveyor.com/api/projects/status/agm38r32u7iy47cd?svg=true)](https://ci.appveyor.com/project/barthachijuu/circularmenu)
+[![Build status](https://ci.appveyor.com/api/projects/status/8a0entl3tl47wwlw/branch/master?svg=true)](https://ci.appveyor.com/project/barthachijuu/circularmenu/branch/master)
 [![codecov](https://codecov.io/gh/barthachijuu/circularmenu/branch/master/graph/badge.svg)](https://codecov.io/gh/barthachijuu/circularmenu)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/barthachijuu/circularmenu)
 ![npm](https://img.shields.io/npm/v/@barthachijuu/circularmenu)
