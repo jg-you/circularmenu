@@ -62,3 +62,7 @@ export default class CircularMenu {
     this.initialized = false;
   }
 }
+setTimeout(() => {
+  const menu = new CircularMenu('#menuContainer');
+  menu.init();
+}, 1000);

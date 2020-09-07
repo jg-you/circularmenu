@@ -4,6 +4,7 @@
 [![codecov](https://codecov.io/gh/barthachijuu/circularmenu/branch/master/graph/badge.svg)](https://codecov.io/gh/barthachijuu/circularmenu)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/barthachijuu/circularmenu)
 ![npm](https://img.shields.io/npm/v/@barthachijuu/circularmenu)
+![npm](https://img.shields.io/npm/dw/@barthachijuu/circularmenu)
 [![HitCount](http://hits.dwyl.com/barthachijuu/circularmenu.svg)](http://hits.dwyl.com/barthachijuu/circularmenu)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -114,6 +115,10 @@ Below, the possible color combination to use for the icon. (Yf you want more, do
 ## 💡 Preview
 
 You can view the preview by [click here](https://codesandbox.io/s/zealous-feather-geyk8?fontsize=14&hidenavigation=1&theme=dark)
+
+![CircularMeu Preview](https://raw.githubusercontent.com/barthachijuu/circularmenu/HEAD/repo_readme_assets/circularmenu.gif)
+
+You can view a demo by [click here](https://codesandbox.io/s/zealous-feather-geyk8?fontsize=14&hidenavigation=1&theme=dark)
 
 ## 🎁 Support: Donate
 
