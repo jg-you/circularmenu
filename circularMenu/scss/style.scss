@@ -63,16 +63,15 @@ body {
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
-    transition: left .5s, top .5s, margin .5s, transform 2s;
     -moz-box-shadow: 0 0 4px 1px rgba(150, 150, 150, .4);
     -webkit-box-shadow: 0 0 4px 1px rgba(150, 150, 150, .4);
     -o-box-shadow: 0 0 4px 1px rgba(150, 150, 150, .4);
     box-shadow: 0 0 4px 1px rgba(150, 150, 150, .4);
+    overflow: hidden;
 
     &:hover {
-      // left: -60px !important;
+      left: -60px !important;
       border-radius: 50px;
-      left: auto !important;
       right: 40%;
       padding: 0 100px 0 5px;
       position: absolute;

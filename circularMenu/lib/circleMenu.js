@@ -17,7 +17,7 @@ export const expandMenu = (settings) => {
       left: `${x}px`,
       top: `-${y}px`,
       margin,
-      transition: `all .7s ${settings.in}`,
+      transition: `all .3s ${settings.in}`,
 
     });
   });

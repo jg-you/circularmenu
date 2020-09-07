@@ -6,11 +6,15 @@
     <!-- Make the page mobile compatible -->
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover"> <!-- iphonex viewport props -->
     <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"><script src="index.js"></script></head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"><script src="index.js"></script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"><script src="index.js"></script></head>
   <body ontouchstart>
     <div id="menuContainer"></div>
     <section class="page-header">
       <h1 class="project-name">Circlemenu</h1>
     </section>
+    <script>
+      const menu = new CircularMenu('#menuContainer');
+      menu.init();
+    </script>
   </body>
 </html>

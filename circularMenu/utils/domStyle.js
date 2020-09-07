@@ -19,7 +19,7 @@ export const stylizeContainer = (canvasElem) => {
   return domStyle(canvasElem, {
     width: '150px',
     height: '150px',
-    right: '0',
-    bottom: '0',
+    right: '10px',
+    bottom: '10px',
   });
 };
