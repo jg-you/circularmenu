@@ -1,6 +1,6 @@
 {
   "name": "@barthachijuu/circularmenu",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "A circular menù animated with css transition",
   "main": "index.js",
   "engines": {
