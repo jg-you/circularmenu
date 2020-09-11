@@ -1,6 +1,6 @@
 import CircularMenu from '../index';
 import defaultConfig from '../lib/config';
-import { checkIconColor } from '../utils/utility';
+import { validateSettings } from '../utils/utility';
 import { getInitialState, getMenuContainer, getContainer, getItems } from '../lib/circleMenu';
 
 describe('CircularMenu', () => {
@@ -36,7 +36,20 @@ describe('CircularMenu', () => {
   });
 
   test('Simulate the expand menu method', () => {
-    menu = new CircularMenu('#menuContainer', {});
+    menu = new CircularMenu('#menuContainer', {animationType: 'onSide'});
+    menu.init();
+    validateSettings({
+      iconColor: 'crab-4',
+      animationIn: 'landscape',
+      animationOut: 'omit',
+      animationType: 'swift',
+      animationEntrance: 'dance',
+    });
+    document.body.children[0].children[0].lastElementChild.children[0].click();
+  });
+
+  test('Simulate the expand menu method with different animation', () => {
+    menu = new CircularMenu('#menuContainer', {animationType: 'onTop'});
     menu.init();
     document.body.children[0].children[0].lastElementChild.children[0].click();
   });
@@ -47,15 +60,37 @@ describe('CircularMenu', () => {
     document.body.children[0].children[0].lastElementChild.children[1].click();
   });
 
+  test('Simulate the explode menu method', () => {
+    menu = new CircularMenu('#menuContainer', {animationType: 'explode'});
+    menu.init();
+    document.body.children[0].children[0].lastElementChild.children[0].click();
+  });
+
+  test('Simulate the implode menu method', () => {
+    menu = new CircularMenu('#menuContainer', {animationType: 'explode'});
+    menu.init();
+    document.body.children[0].children[0].lastElementChild.children[1].click();
+    jest.runAllTimers();
+    expect(setTimeout).toHaveBeenCalled();
+    expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 1400);
+  });
+
   test('Simulate the location change', () => {
     menu = new CircularMenu('#menuContainer', {});
     menu.init();
     document.body.children[0].lastElementChild.firstElementChild.click();
   });
 
-  test('Test the color style passed', () => {
-    checkIconColor('red-1'.split('-')[0]);
-    checkIconColor('amaranto-1'.split('-')[0]);
+  test('Simulate the explode animation', () => {
+    menu = new CircularMenu('#menuContainer', {animationType: 'explode'});
+    validateSettings({
+      iconColor: 'blue-4',
+      animationIn: 'ease-in',
+      animationOut: 'linear',
+      animationType: 'explode',
+      animationEntrance: 'dance',
+    });
+    menu.init();
   });
 
   test('Remove the toaster', () => {
@@ -63,7 +98,7 @@ describe('CircularMenu', () => {
     menu.init();
     jest.runAllTimers();
     document.body.lastElementChild.lastElementChild.lastElementChild.click();
-    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeout).toHaveBeenCalled();
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 500);
   });
 });
