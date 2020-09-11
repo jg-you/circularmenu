@@ -332,5 +332,9 @@ $oc-color-list: (
     .icon-#{$glyph}-#{$i} {
       color: map-get($name, #{$i});
     }
+
+    .bg-#{$glyph}-#{$i} {
+      background-color: map-get($name, #{$i});
+    }
   }
 }

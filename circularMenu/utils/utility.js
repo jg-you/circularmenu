@@ -1,21 +1,19 @@
-const colorArray = [
-  'gray',
-  'red',
-  'pink',
-  'grape',
-  'violet',
-  'indigo',
-  'blue',
-  'cyan',
-  'teal',
-  'green',
-  'lime',
-  'yellow',
-  'orange',
-];
+const settingType = {
+  iconColor: ['gray', 'red', 'pink', 'grape', 'violet', 'indigo', 'blue', 'cyan', 'teal', 'green', 'lime', 'yellow', 'orange'],
+  animation: ['ease', 'linear', 'ease-in', 'ease-out', 'ease-in-out'],
+  animationType: ['onTop', 'onSide', 'explode'],
+  animationEntrance: ['bounce', 'swirl', 'slide-in'],
+};
 
 // eslint-disable-next-line import/prefer-default-export
-export const checkIconColor = color => (new RegExp(`${color.split('-')[0]}`).test(colorArray) ? color : 'blue-7');
+export const validateSettings = settings => {
+  if(!settingType.iconColor.includes(settings.iconColor.split('-')[0])) settings.iconColor = 'blue-7';
+  if(!settingType.animation.includes(settings.animationIn)) settings.animationIn = 'ease-in';
+  if(!settingType.animation.includes(settings.animationOut)) settings.animationOut = 'ease-out';
+  if(!settingType.animationType.includes(settings.animationType)) settings.animationType = 'onTop';
+  if(!settingType.animationEntrance.includes(settings.animationEntrance)) settings.animationEntrance = 'bounce';
+  return settings;
+};
 
 export const addError = (text) => {
   const snackbarWrapper = document.createElement('div');

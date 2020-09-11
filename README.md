@@ -70,10 +70,11 @@ You can set `options` to `new CirclueMenu('your_container', options);` example:
 const CircularMenu = require("@barthachijuu/circularmenu");
 
 const options = {
-  iconcolor: 'blue-7',
-  width: 100,
-  height: 100,
-  iconDim: 50,
+  iconColor: 'blue-7',
+  animationIn: 'ease-in',
+  animationEntrance: 'bounce',
+  animationOut: 'ease-out',
+  animationType: 'onTop',
   menuElem: [...],
   ...
 };
@@ -87,13 +88,19 @@ Below is available a description of `options` values.
 
 | Parameter | Description | Values | Default value | Available since |
 | --- | --- | --- | --- | --- |
-| iconcolor | Set the color of icons | string | blue-7 | **v1.5.0** |
-| iconIn    | Set the animtion entance | string [ease/linear/ease-in/ease-out/ease-in-out] | ease-in  | **v1.5.0** |
-| iconOut   | Set the animation exit | string [ease/linear/ease-in/ease-out/ease-in-out] | ease-out  | **v1.5.0** |
+| iconcolor | Set the color of icons | string | blue-7 | **v1.0.0** |
+| iconIn    | Set the animtion entance | string [ease/linear/ease-in/ease-out/ease-in-out] | ease-in  | **v1.0.0** |
+| iconOut   | Set the animation exit | string [ease/linear/ease-in/ease-out/ease-in-out] | ease-out  | **v1.0.0** |
+| menuElem  | Set the number of elements in the menu | array | [an example list]  | **v1.0.0** |
+| animationEntrance   | Set the animation entrance of the menu | string [bounce/puff-in/slide-in] | bounce  | **v1.2.0** |
+| animationType   | Set the animation when over a voice | string [onTop/onside/explode] | onTop  | **v1.2.0** |
+
+> Note: At the moment, the maximun number of elements in menuElem, is limited to 8
+> If you want more animation type don't esitate to open a pull request
 
 ## 🎨 Palette
 
-Below, the possible color combination to use for the icon. (Yf you want more, don't esitate to opena pull request)
+Below, the possible color combination to use for the icon. (If you want more, don't esitate to open a pull request)
 
 | Class | Color | Gradation |
 | --- | --- | --- |
@@ -111,10 +118,6 @@ Below, the possible color combination to use for the icon. (Yf you want more, do
 |icon-yellow-{0-7} | Yellow | from ![#fff9db](https://via.placeholder.com/15/fff9db/000000?text=+) `#fff9db` to ![#e67700](https://via.placeholder.com/15/e67700/000000?text=+) `#e67700` |
 |icon-orange-{0-7} | Orange | from ![#fff9f1](https://via.placeholder.com/15/fff9f1/000000?text=+) `#fff9f1` to ![#d9480f](https://via.placeholder.com/15/d9480f/000000?text=+) `#d9480f` |
 |icon-brown-{0-7} | Brown | from ![#f5deb3](https://via.placeholder.com/15/f5deb3/000000?text=+) `#f5deb3` to ![#a52a2a](https://via.placeholder.com/15/a52a2a/000000?text=+) `#a52a2a` |
-
-## 💡 Preview
-
-You can view the preview by [click here](https://codesandbox.io/s/zealous-feather-geyk8?fontsize=14&hidenavigation=1&theme=dark)
 
 ![CircularMeu Preview](https://raw.githubusercontent.com/barthachijuu/circularmenu/HEAD/repo_readme_assets/circularmenu.gif)
 
