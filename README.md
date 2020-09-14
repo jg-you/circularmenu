@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/barthachijuu/circularmenu/branch/master/graph/badge.svg)](https://codecov.io/gh/barthachijuu/circularmenu)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/barthachijuu/circularmenu)
 ![npm](https://img.shields.io/npm/v/@barthachijuu/circularmenu)
-![npm](https://img.shields.io/npm/dw/@barthachijuu/circularmenu)
+![npm](https://img.shields.io/npm/dt/@barthachijuu/circularmenu)
 [![HitCount](http://hits.dwyl.com/barthachijuu/circularmenu.svg)](http://hits.dwyl.com/barthachijuu/circularmenu)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
